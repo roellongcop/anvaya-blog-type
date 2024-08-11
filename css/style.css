@@ -13,56 +13,56 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 area,
 img,
 map {
-	outline:none;
+    outline:none;
 }
 
 /* Helpers */
 .clearfix,
 .clear {
-	clear:both;
+    clear:both;
 }
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 html,
 body {
-	-webkit-text-size-adjust:none;
+    -webkit-text-size-adjust:none;
 }
 
 body{
-	font-family: 'Poppins',sans-serif;
-	margin: 0;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
 }
 
 p, h1, h2, h3, h4, h5 {
-	font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins',sans-serif;
 }
 
 .container {
@@ -146,6 +146,7 @@ header.main .hero-images {
 header.main .hero-box-container {
     display: flex;
     justify-content: center;
+    background: #FFFFFF;
 }
 header.main .hero-box {
     background: #ffffff;
@@ -155,11 +156,16 @@ header.main .hero-box {
 }
 header.main .hero-box section {
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 9rem;
+}
+header.main .hero-box p.sub-title {
+    font-weight: 600;
 }
 header.main .hero-box section img {
-    width: auto;
+    width: 100%;
     height: auto;
+    max-width: 600px;
+    border-radius: 36px;
 }
 header.main .hero-box section .separator-title {
     font-weight: 600;
@@ -170,11 +176,39 @@ header.main .hero-box section .separator-title p {
 }
 
 
+
 header.main .hero-box section h3 {
     color: #292929;
     font-weight: 600;
     font-size: 1.5rem;
 }
+header.main .hero-box section h3.lower {
+    margin-top: 5rem;
+}
+header.main .hero-box section .sub-main {
+    font-weight: 500;
+}
+
+header.main .hero-box section h2 {
+    color: #292929;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 4rem 0 3rem 0
+
+}
+header.main .hero-box section .image-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    gap: 15px;
+    margin: 0 auto;
+}
+header.main .hero-box section .image-section img {
+    width: 49%;
+    margin: 15px 0 ;
+}
+
 
 
 .hero-box .box-image {
@@ -445,7 +479,7 @@ section.p4 {
     color: #000000;
     height: 50px;
     padding: 5px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 .table-schedule td {
@@ -453,7 +487,7 @@ section.p4 {
     color: #000000;
     font-size: 20px;
     padding: 5px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 .table-schedule tr > td:first-child {
@@ -486,12 +520,12 @@ section.p4 {
 /* P5 SECTION */
 
 section.p5.gallery {
-    padding-top: 144px;
+    padding-top: 100px;
 }
 
 .header-logo {
     display: flex;
-    align-items: center;    
+    align-items: center;
     gap: 54px;
     margin-bottom: 95px;
 }
@@ -584,7 +618,7 @@ section.p5.gallery {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 40px;    
+    padding: 40px;
 }
 
 .video-text h4 {
@@ -720,9 +754,9 @@ section.heading-text {
 
 /* P7 SECTION */
 .p7 {
-	background: url('../images/mesmerizing-shot-crystal-blue-ocean-waves.jpg');
-	background-size: cover;
-	padding: 64px 0 74px 0;
+    background: url('../images/mesmerizing-shot-crystal-blue-ocean-waves.jpg');
+    background-size: cover;
+    padding: 64px 0 74px 0;
 }
 
 .p7-list {
@@ -753,16 +787,16 @@ section.heading-text {
 }
 
 .p7-item h3 {
-	color: #1F1F1F;
-	font-size: 34px;	
-	-webkit-text-stroke-width: 1px;
+    color: #1F1F1F;
+    font-size: 34px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #707070;
 }
 
 /* P8 SECTION */
 .p8 {
-	background:#F0DA7B;
-    padding: 23px 0 41px 0;	
+    background:#F0DA7B;
+    padding: 23px 0 41px 0;
 }
 
 .p8 h2 {
@@ -837,28 +871,28 @@ footer {
 }
 
 .footer-container {
-	display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .footer-container .copyright {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .modal {
@@ -877,27 +911,27 @@ footer {
 }
 /* Modal Content/Box */
 .modal-content {
-display: flex;
-  background-color: transparent;
-  margin: auto; /* 15% from the top and centered */
-  padding: 0;
-  border: none;
-  width: 80%; /* Could be more or less, depending on screen size */
+    display: flex;
+    background-color: transparent;
+    margin: auto; /* 15% from the top and centered */
+    padding: 0;
+    border: none;
+    width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /*START ADDED BY ROEL*/

@@ -1,5 +1,7 @@
 // Get the modal
 var modal = document.getElementById("myModal");
+var modalClose = document.getElementById("modal-close");
+
 var modalContent = document.querySelector(".modal-content");
 
 var modalVideo = document.getElementById("modal-video");
@@ -7,6 +9,9 @@ var modalImagePreview = document.getElementById("modal-image-preview");
 
 // Get the video items
 var videoItems = document.getElementsByClassName("video-item");
+var golfers = document.querySelectorAll(".golfer-name");
+var tabContents = document.querySelectorAll(".content-text");
+
 var imagePreviews = document.getElementsByClassName("image-preview");
 const galleryImages = document.querySelectorAll('.image-gallery .image-list img')
 
@@ -40,6 +45,22 @@ galleries.forEach(function(gallery) {
     });
   });
 });
+golfers.forEach(function(golfer) {
+  golfer.addEventListener("click", function() {
+    golfers.forEach(function(g) {
+      g.classList.remove("active");
+    });
+    golfer.classList.add("active");
+    var newId = golfer.getAttribute("data-id");
+
+    tabContents.forEach(function(t) {
+      t.classList.remove("active");
+    });
+
+    var activeTab = document.getElementById(newId);
+    activeTab.classList.add("active");
+  });
+})
 
 // Loop through the video items to add the click event listener
 for (var i = 0; i < videoItems.length; i++) {
@@ -67,6 +88,11 @@ for (var i = 0; i < imagePreviews.length; i++) {
   });
 }
 
+if (modalClose) {
+  modalClose.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal || event.target == modalContent) {

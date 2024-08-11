@@ -1,0 +1,14 @@
+@media screen and (max-width: 425px) {
+    header.main .hero-box section {
+        padding: 3rem 2rem;
+    }
+  header.main .nav .content .content-1, header.main .nav .content .content-2 {
+    padding-right: 5px;
+  }
+  header.main .nav .content .content-3 {
+        padding-left: 0 !important;
+  }
+  .hero-main .text {
+    line-height: 22px;
+  }
+}
