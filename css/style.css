@@ -167,7 +167,7 @@ header.main .hero-box section img {
     width: 100%;
     height: auto;
     max-width: 600px;
-    border-radius: 36px;
+    border-radius: 10px;
 }
 header.main .hero-box section .separator-title {
     font-weight: 600;
