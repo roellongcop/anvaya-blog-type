@@ -150,11 +150,32 @@ header.main .hero-box-container {
 header.main .hero-box {
     background: #ffffff;
     width: 1423px;
-    display: flex;
-    flex-direction: row;
     border-radius: 37px;
     margin-top: -126px;
 }
+header.main .hero-box section {
+    text-align: center;
+    padding: 2rem 0;
+}
+header.main .hero-box section img {
+    width: auto;
+    height: auto;
+}
+header.main .hero-box section .separator-title {
+    font-weight: 600;
+    margin-top: 2rem;
+}
+header.main .hero-box section .separator-title p {
+    line-height: 1.5rem;
+}
+
+
+header.main .hero-box section h3 {
+    color: #292929;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
 
 .hero-box .box-image {
     width: 40%;
