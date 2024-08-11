@@ -77,8 +77,10 @@ header.main {
     background: url(../images/bg.png);
     display: flex;
     flex-direction: column;
-    background-position: center center;
-    background-size: cover;
+    background-position: top left;
+    background-size: 1700px;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 header.main .nav {
