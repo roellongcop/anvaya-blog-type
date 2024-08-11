@@ -78,7 +78,7 @@ header.main {
     display: flex;
     flex-direction: column;
     background-position: top left;
-    background-size: 1700px;
+    background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
 }
