@@ -911,6 +911,7 @@ footer {
 }
 /* Modal Content/Box */
 .modal-content {
+    position: relative;
     display: flex;
     background-color: transparent;
     margin: auto; /* 15% from the top and centered */
@@ -925,6 +926,17 @@ footer {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    color: white;
+    z-index: 1;
+    padding: 5px 10px;
+    background: rgb(214 213 213 / 68%);
+    border-radius: 50%;
+}
+.close:hover {
+    background: rgb(214 213 213 / 78%);
 }
 
 .close:hover,
